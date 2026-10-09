@@ -1,6 +1,22 @@
 #include<iostream>
 using namespace std;
 
+int main(){
+    int arr[5]={1,2,3,4,5};
+    int rev[5];
+
+    for(int i=0;i<5;i++){
+        rev[i]=arr[4-i]; 
+        cout<<rev[i]; 
+    }
+} 
+
+
+/* Without Extra Spaces
+
+#include<iostream>
+using namespace std;
+
 int printArr(int arr[],int n){
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
@@ -22,3 +38,5 @@ int main(){
     printArr(arr,n);
     return 0;
 } 
+
+*/

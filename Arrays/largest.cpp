@@ -2,13 +2,13 @@
 using namespace std;
 
 int main(){
-    int arr[6] = {12, 45, 7, 89, 23, 56};
+    int arr[5]={22,33,44,55,66};
     int largest = arr[0];
-    for(int i=1;i<6;i++){
-        if(arr[i]>largest){
+    for(int i=1;i<5;i++){
+        if (arr[i]>largest){
             largest=arr[i];
         }
-    } 
-    cout<<"Largest Element is:"<<largest; 
+    }
+    cout<<largest;  
     return 0;
-} 
+}
