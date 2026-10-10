@@ -19,8 +19,8 @@ int binSearch(int arr[],int n,int key){
 }
 
 int main(){
-    int arr[]={23,36,58,77,99};
+    int arr[]={10,20,30,50,70,90};
     int n=sizeof(arr)/sizeof(int);
-    cout<<binSearch(arr,n,1)<<" ";  
+    cout<<binSearch(arr,n,70)<<" ";   
     return 0; 
 }
