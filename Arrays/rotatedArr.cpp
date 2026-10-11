@@ -29,7 +29,7 @@ int rotatedArr(int A[],int n,int target){
 }
 
 int main(){
-    int arr[]={3,4,5,6,7,0,1,2};
+    int arr[]={6, 7, 8, 1, 2, 3, 4, 5};
     int n=sizeof(arr)/sizeof(int);
-    cout<<rotatedArr(arr,n,0);      
+    cout<<rotatedArr(arr,n,3);       
 }
