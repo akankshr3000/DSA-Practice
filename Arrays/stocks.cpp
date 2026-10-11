@@ -1,20 +1,18 @@
 #include<iostream>
 using namespace std;
 
-
-void maxProfit(int price[],int n){
-    int mP=0,bB=price[0];
+int buysellStocks(int price[],int n){
+    int maxProfit=0,bestBuy=price[0];
     for(int i=1;i<n;i++){
-        if(price[i]>bB){
-            mP=max(mP,price[i]-bB);
-        }
-        bB=min(bB,price[i]);
+        maxProfit=max(maxProfit,price[i]-bestBuy);
+        bestBuy=min(price[i],bestBuy);
     }
-    cout<<"Max Profit: "<<mP; 
+
+    cout<<"("<<bestBuy<<","<<maxProfit<<")"; 
 }
 int main(){
-    int arr[6]={7,1,5,3,6,4};
-    int n=sizeof(arr)/sizeof(int);
-    maxProfit(arr,n); 
+    int arr[]={7, 1, 5, 3, 6, 4};
+    int n= sizeof(arr)/sizeof(int);
+    buysellStocks(arr,n);  
     return 0;
 }

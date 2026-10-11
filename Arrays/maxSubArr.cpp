@@ -1,24 +1,23 @@
 #include<iostream>
 using namespace std;
 
-int maxSubArr(int arr[],int n){
-    int mS=INT16_MIN;
-    int cS=0;
+int maxSubbArr(int arr[],int n){
+    int currSum=0;
+    int maxSum=INT16_MIN; 
     for(int i=0;i<n;i++){
-        cS+=arr[i];
-        cout<<cS<<" "; 
-        mS=max(mS,cS);
+        currSum+=arr[i];
+        maxSum=max(maxSum,currSum);
 
-        if(cS<0){
-            cS=0;
+        if(currSum<0){
+            currSum=0; 
         }
     }
-    cout<<"Maximum SubArray is:"<<mS;
+    cout<<"Maximum Sum is: "<<maxSum; 
 }
 
 int main(){
     int arr[]={4, -6, 3, 5, -2, 7, -8, 4};
     int n=sizeof(arr)/sizeof(int);
-    maxSubArr(arr,n);  
+    maxSubbArr(arr,n); 
     return 0;
 }
