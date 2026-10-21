@@ -20,7 +20,7 @@ int printArr(int arr[],int n){
 }
 
 int main(){
-    int arr[]={3, 6, 2, 1, 8, 7, 4, 5, 3, 1}; 
+    int arr[]={3, 6, 2, 1, 8, 7, 4, 5, 3, 1};  
     int n=sizeof(arr)/sizeof(int);
     selectSort(arr,n);
     printArr(arr,n); 
