@@ -19,8 +19,8 @@ int countSort(int arr[],int n){
     }
 
     int j=0;
-    for(int i=minVal;i<=maxVal;i++){
-        while(freq[i]>0){
+    for(int i=maxVal;i>=minVal;i--){  
+        while(freq[i]>0){ 
             arr[j++]=i;
             freq[i]--;
         }
